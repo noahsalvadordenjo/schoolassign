@@ -34,7 +34,7 @@ public class ValueConverter {
         return (double) rawValue / 90;    
     }
     public static double rainRate(short rawValue) {
-        return (double) rawValue / 100.00;
+        return (double) (rawValue / 100.00) * 2.54 * 100;
     }
     public static double uvIndex(short rawValue)
     {
@@ -53,8 +53,6 @@ public class ValueConverter {
         time = String.valueOf(rawValue);
         String time1 = time.substring(0, (time.length()/2));
         String time2 = time.substring((time.length()/2));
-
-        System.out.println("Time: " + time1 + ":" + time2);
-        return time;
+        return time1 + ":" + time2;
     }
 }
