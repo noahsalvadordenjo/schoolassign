@@ -4,7 +4,7 @@ public class ValueConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("hoi");
-        sunSet((short)2201);
+        sunRiseSet((short)2201);
     }
     public static double airPressure(short rawValue) {
         double devidedBy = (double) rawValue / 100;
